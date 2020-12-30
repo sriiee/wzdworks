@@ -1,0 +1,351 @@
+
+@media (max-width : 1600px) {
+  .main_top .inner {
+    padding-top:10%;
+  }
+}
+@media (max-width : 1200px) {
+  #main { max-height:650px; }
+  .main_top .inner { padding-top:11%; }
+
+  #service .tabCont { padding:0 5px; }
+  #service .tabCont .downLink a {
+    padding:0 15px 0 40px;
+    font-size:15px;
+  }
+  #service .tabCont .downLink a.appstore,
+  #service .tabCont .downLink a.googleplay,
+  #service .tabCont .downLink a.web {
+    background-position:left 13px center;
+  }
+}
+@media (max-width : 1170px) {
+  .main_top .abs .txt { padding:0 40px; }
+  .main_top .abs .img { padding-right:40px; }
+
+}
+@media (max-width : 1024px) {
+
+  #about .teamList { padding:60px 140px 0 }
+  #about .teamList li {
+    width:170px;
+    padding:0 20px;
+  }
+  #about .teamList li img {
+    max-width:100% !important;
+  }
+  .teamList li:nth-child(-n+6) .title span {
+    padding-left:55px;
+  }
+  .teamList li:nth-child(7) .title span,
+  .teamList li:nth-child(8) .title span,
+  .teamList li:nth-child(9) .title span {
+    padding-left:30px;
+  }
+  .teamList li:nth-child(10) .title span {
+    padding-left:47px;
+  }
+  .teamList li:nth-child(11) .title span {
+    padding-left:35px;
+  }
+  .teamList li:nth-child(12) .title span {
+    padding-left:40px;
+  }
+  .teamList li:nth-child(1) .work .w1,
+  .teamList li:nth-child(2) .work .w1 {
+    padding-left:63px;
+  }
+  .teamList li:nth-child(3) .work .w1 { padding-left:62px; }
+  .teamList li:nth-child(4) .work .w1 { padding-left:53px; }
+  .teamList li:nth-child(5) .work .w1 { padding-left:61px; }
+  .teamList li:nth-child(6) .work .w1 { padding-left:49px; }
+  .teamList li:nth-child(7) .work .w1,
+  .teamList li:nth-child(8) .work .w1,
+  .teamList li:nth-child(9) .work .w1 {
+    padding-left:29px;
+  }
+  .teamList li:nth-child(10) .work .w1 { padding-left:46px; }
+  .teamList li:nth-child(11) .work .w1 { padding-left:37px; }
+  .teamList li:nth-child(12) .work .w1 { padding-left:32px; }
+
+
+  .teamList li:nth-child(3) .work .w2 { padding-left:44px; }
+  .teamList li:nth-child(4) .work .w2 { padding-left:55px; }
+  .teamList li:nth-child(5) .work .w2 { padding-left:47px; }
+  .teamList li:nth-child(6) .work .w2 { padding-left:56px; }
+  .teamList li:nth-child(7) .work .w2,
+  .teamList li:nth-child(8) .work .w2,
+  .teamList li:nth-child(9) .work .w2 { padding-left:17px; }
+  .teamList li:nth-child(10) .work .w2 { padding-left:25px; }
+  .teamList li:nth-child(11) .work .w2 { padding-left:28px; }
+  .teamList li:nth-child(12) .work .w2 { padding-left:47px; }
+}
+
+@media (max-width : 1000px) {
+  #main { max-height:550px; }
+  .main_top { background-size:380% !important; }
+  .main_top .inner { padding-top:10%; }
+  .main_top h2 img { width:250px }
+  .main_top p { font-size:18px; }
+
+  #about .history {
+    margin-top:20px;
+    padding:50px 30px 0 60px;
+  }
+  #about .history li {
+    width:50%;
+  }
+  #about .history li p {
+    display:inline-block;
+  }
+}
+
+@media (max-width : 950px){
+
+  #service .tabCont .downLink a {
+    font-size:0;
+    padding:0;
+    width:50px;
+    border-radius:100%;
+    font-size:0;
+  }
+  #service .tabCont .txt { margin-bottom:30px; }
+  #service .tabCont .downLink a.appstore {
+    background-position:left 13px center;
+  }
+  #service .tabCont .downLink a.googleplay {
+    background-position:left 16px center;
+  }
+  #service .tabCont .downLink a.web {
+    background-position:center;
+    background-size:22px;
+  }
+}
+
+@media (max-width : 900px) {
+  #nav { margin-left:45px; }
+  #nav li { padding:0; }
+  #nav a { padding:10px; }
+
+  .careerBox > .cell {
+    display:block;
+    width:100%;
+  }
+  .careerBox > .cell { padding:0; }
+  .careerBox .benefit ul {
+    padding-top:0;
+  }
+  .careerBox .benefit li {
+    min-height:auto;
+    margin:30px 0;
+  }
+  .careerBox .benefit p {
+    display:inline-block;
+  }
+  .careerBox .recruit {
+    margin-top:20px;
+  }
+
+  #contact .cell {
+    display:block;
+    width:100%;
+  }
+  #contact #map {
+    height:500px;
+  }
+}
+
+@media (max-width : 860px) {
+  #about .teamList { padding:60px 100px 0 }
+
+  .contentSub,
+  #philosophy .tit { font-size:18px; }
+  #philosophy ul li { padding:0 15px; }
+  #philosophy ul li:nth-child(2):before,
+  #philosophy ul li:nth-child(2):after {
+    display:none;
+  }
+
+  #about .history {
+    padding:50px 30px 0 30px;
+  }
+
+  #service .tabCont .txt h4 { font-size:36px; }
+}
+
+@media (max-width : 780px) {
+  #about .teamList { padding:60px 55px 0 }
+}
+
+@media (max-width : 740px) {
+  #main {
+    height:auto;
+    max-height:none;
+  }
+  .main_top { background:none; }
+  .main_top .abs {
+    position:relative;
+    height:auto;
+  }
+  .main_top .inner {
+    padding:20px 0;
+  }
+  .main_top .inner > div {
+    display:block;
+    width:100% !important;
+    text-align:center;
+  }
+  .main_top .abs .txt {
+    margin-top:100px;
+    padding:0 50px;
+  }
+  .main_top .abs .img {
+    margin-top:30px;
+    padding:0 50px;
+  }
+  .main_top p { max-width:100%; }
+
+
+  #about .teamList { padding:60px 30px 0 }
+
+  .content { padding:70px 0; }
+  .contentTit { font-size:30px; }
+  #nav { display:none; }
+  header h1 { top:9px; }
+  header .langBtn { top:13px; }
+
+  #philosophy ul li {
+    width:100%;
+    margin-bottom:30px;
+  }
+  #philosophy .sub p {
+    max-width:100%;
+  }
+
+  #service .tabCont li > div {
+    width:100%;
+    display:block;
+  }
+  #service .tabCont .txt {
+    padding-right:0;
+    margin-bottom:15px;
+  }
+  #service .tabCont .img {
+    text-align:center;
+  }
+
+  #about .history {
+    padding:30px 30px 10px 30px;
+  }
+  #about .history li {
+    width:100%;
+    margin-bottom:30px;
+  }
+}
+
+@media (max-width : 640px) {
+  header { position:absolute; }
+
+  #about .teamList { padding:60px 0 0 }
+  #contact .address { padding:50px 0; }
+  #contact #map { height:300px; }
+
+  .careerBox .recruit h4 {
+    font-size:20px;
+  }
+  .careerBox .recruit .position {
+    font-size:15px;
+  }
+
+  #service .tabCont li {
+    padding:0;
+  }
+}
+
+@media (max-width : 520px) {
+  .main_top p { font-size:16px; }
+  header h1 { top:14px; }
+  header h1 a {
+    width:96px;
+  }
+  #service .tabNav { margin:25px 0 40px; }
+}
+
+@media (max-width : 460px) {
+  header .langBtn {
+    font-size:16px;
+    width:60px;
+    line-height:34px;
+  }
+  header h1 {
+    top:12px;
+  }
+  header.fix h1 a {
+    background-size:110px;
+  }
+
+  /*.content { padding:35px 0; }*/
+  .contentSub { font-size:16px; }
+
+  #service .tabCont .txt h4 {
+    font-size:30px;
+  }
+  #service .tabNav {
+    margin:25px 0 40px;
+  }
+  #service .tabNav a {
+    font-size:14px;
+    padding:7px 12px;
+  }
+
+  .careerBox .benefit li {
+    padding-left:0;
+    min-height:auto;
+  }
+  .careerBox .benefit h4 {
+    position:relative;
+    margin-bottom:10px;
+  }
+  .careerBox .recruit li a {
+    padding:0 25px 0 150px;
+  }
+  .careerBox .recruit li:before {
+    left:30px;
+  }
+  .careerBox .benefit .txt {
+    padding-left:48px;
+  }
+}
+
+@media (max-width : 460px) {
+  .careerBox .benefit li { color:#666; }
+  .careerBox .benefit h4 { color:#333; }
+}
+
+@media (max-width : 420px) {
+  #about .teamList li { width:135px; padding:0 10px; }
+}
+
+@media (max-width : 380px) {
+  #service .tabNav ul {
+    display:block;
+    overflow:hidden;
+    background-color:#f6f6f6;
+    border-radius:20px;
+  }
+  #service .tabNav li {
+    float:left;
+    width:33.33%;
+  }
+  #service .tabNav li a {
+    padding:7px 0;
+    font-size:12px;
+  }
+
+  .careerBox .recruit li a {
+    padding:0 15px 0 125px;
+  }
+  .careerBox .recruit li:before {
+    left:20px;
+  }
+}

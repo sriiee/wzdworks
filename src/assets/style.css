@@ -1,0 +1,732 @@
+header, section, div, h1, h2, h3, h4, ul, li, p {
+  margin:0;
+  padding:0;
+}
+html {
+  scroll-behavior: smooth;
+  height:100%;
+  font-size:16px;
+}
+body {
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+  height:100%;
+  background-color:#fff;
+  font-size:16px;
+}
+ul { list-style:none; }
+a { color:#333; text-decoration:none; }
+a:focus, a:hover {
+  color:#333;
+  text-decoration:none;
+}
+img {
+  border:none;
+  vertical-align:middle;
+  max-width:100%;
+}
+
+.mgTop60 { margin-top:60px; }
+.relative { position:relative; }
+.inner {
+  max-width:1170px;
+  margin:0 auto;
+  padding:0 15px;
+}
+.smInner {
+  max-width:950px;
+  margin:0 auto;
+  padding:0 15px;
+}
+.table {
+  display:table;
+  width:100%;
+  height:100%;
+}
+.cell {
+  display:table-cell;
+  vertical-align:middle;
+}
+.textCenter {
+  text-align:center;
+}
+
+/* HEADER */
+header {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:99;
+  transition:all .3s;
+  -webkit-transition:all .3s;
+  -moz-transition:all .3s;
+  -o-transition:all .3s;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0);
+}
+header.fix {
+  background-color:#fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+header .inner {
+  padding:31px 0 !important;
+  overflow:hidden;
+  text-align:center;
+}
+header h1 {
+  position:absolute;
+  left:15px;
+  top:21px;
+}
+header h1 a {
+  display:inline-block;
+  width:127px;
+  height:43px;
+  background:url('https://s3.ap-northeast-2.amazonaws.com/eosnova.io.resource/images/wzd-logo.png') no-repeat;
+  background-size:contain !important;
+  transition:all .3s;
+  -webkit-transition:all .3s;
+  -moz-transition:all .3s;
+  -o-transition:all .3s;
+}
+header .langBtn {
+  position:absolute;
+  right:15px;
+  top:26px;
+  width:80px;
+  height:36px;
+  line-height:36px;
+  font-size:18px;
+  border:1px solid #fff;
+  border-radius:20px;
+  color:#fff;
+  opacity:.8;
+  transition:all .3s;
+  -webkit-transition:all .3s;
+  -moz-transition:all .3s;
+  -o-transition:all .3s;
+}
+header .langBtn:hover,
+header.fix .langBtn {
+  background-color:#f5732e;
+  border-color:#f5732e;
+  color:#fff;
+}
+#nav {
+  display:inline-block;
+  float:right;
+}
+#nav li {
+  display:inline-block;
+  padding:0 8px;
+}
+#nav a {
+  font-size:18px;
+  color:#fff;
+  padding:10px 15px;
+  transition:all .3s;
+  -webkit-transition:all .3s;
+  -moz-transition:all .3s;
+  -o-transition:all .3s;
+}
+header.fix #nav a:hover,
+#nav a.on,
+header.fix #nav a.on {
+  color:#f5732e;
+}
+header.fix #nav a {
+  color:#333;
+}
+
+/* FOOTER */
+footer {
+  background-color:#f5732e;
+  padding:30px 0;
+  text-align:center;
+  color:#fff;
+  font-size:16px;
+}
+
+
+
+/* Layout */
+.content {
+  position:relative;
+  padding:100px 0;
+}
+.content .scrTop {
+  position:absolute;
+  top:-50px;
+}
+.content#philosophy,
+.content#about {
+  background-color:#f6f6f6;
+  text-align:center;
+}
+.content#service {
+  padding-bottom:0;
+}
+.contentTit {
+  position:relative;
+  padding-bottom:20px;
+  text-align:center;
+  font-size:46px;
+}
+.contentTit:after {
+  content:'';
+  display:block;
+  width:25px;
+  height:1.1px;
+  background-color:#333;
+  position:absolute;
+  bottom:0;
+  left:50%;
+  margin-left:-12.5px;
+}
+.contentSub {
+  font-size:20px;
+  margin-top:25px;
+  text-align:center;
+  word-break:keep-all;
+}
+
+
+#main {
+  height:100%;
+  max-height:700px;
+}
+.main_top {
+  position:relative;
+  height:100%;
+  background:url('https://s3.ap-northeast-2.amazonaws.com/eosnova.io.resource/images/wzd-main-bg.png') no-repeat center top / cover;
+}
+.main_top .abs {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:10;
+}
+.main_top .inner {
+  display:table;
+  width:100%;
+  height:100%;
+  box-sizing:border-box;
+  padding:7% 0 50px;
+}
+.main_top .inner > div {
+  display:table-cell;
+  vertical-align:middle;
+  box-sizing:border-box;
+}
+.main_top .abs .txt {
+  width:44%;
+  padding:0 15px;
+}
+.main_top .abs .img {
+  text-align:right;
+  width:56%;
+  padding-right:15px;
+}
+.main_top p {
+  font-size:20px;
+  word-break:keep-all;
+  max-width:420px;
+  margin-top:25px;
+}
+
+#philosophy ul {
+  overflow:hidden;
+  margin-top:80px;
+}
+#philosophy ul li {
+  width:33.33%;
+  float:left;
+  position:relative;
+}
+#philosophy ul li:nth-child(2):before,
+#philosophy ul li:nth-child(2):after {
+  content:'';
+  display:block;
+  width:160px;
+  height:4px;
+  background:url('wzd-bg-line.png') no-repeat top left / cover;
+  position:absolute;
+  top:43px;
+  left:-80px;
+}
+#philosophy ul li:nth-child(2):after {
+  left:auto;
+  right:-80px;
+}
+#philosophy .tit {
+  font-size:20px;
+  padding:15px 0 10px;
+}
+#philosophy .sub {
+  color:#666;
+  font-size:14px;
+}
+#philosophy .sub p {
+  max-width:270px;
+  margin:0 auto;
+  word-break:keep-all;
+}
+#service .tabNav {
+  text-align:center;
+  margin:25px 0 80px;
+}
+#service .tabNav ul,
+#service .tabNav ul li {
+  display:inline-block;
+  border-radius:20px;
+  background-color:#f6f6f6;
+}
+#service .tabNav a {
+  display:block;
+  font-size:16px;
+  padding:6px 20px;
+  border:1px solid #f6f6f6;
+  border-radius:20px;
+  transition:all .3s;
+  -webkit-transition:all .3s;
+  -moz-transition:all .3s;
+  -o-transition:all .3s;
+}
+#service .tabNav .on a {
+  color:#f5732e;
+  border-color:#f5732e;
+  background-color:#fff;
+}
+#service .tabNav ul li:first-child a {
+  padding:7px 20px 5px;
+}
+#service .tabCont {
+  position:relative;
+  overflow:hidden;
+}
+#service .tabCont li {
+  padding:0 50px 80px;
+  box-sizing:border-box;
+  height:auto;
+  display:none;
+}
+#nova {
+  padding-bottom:0 !important;
+}
+#service .tabCont li#keyboard,
+#service .tabCont li#somcloud {
+  padding-bottom:80px;
+}
+#service .tabCont li.on {
+  display:block;
+}
+#service .tabCont li > div {
+  width:50%;
+}
+#service .tabCont .txt {
+  word-break:keep-all;
+  font-size:16px;
+  padding-right:20px;
+}
+#service .tabCont .txt h4 {
+  font-size:54px;
+  margin-bottom:10px;
+}
+#service .tabCont .txt h4 span {
+  font-weight:300;
+}
+#service .tabCont .downLink {
+  margin-top:25px;
+}
+/* https://s3.ap-northeast-2.amazonaws.com/eosnova.io.resource/images/wzd-icon-pin.png */
+#service .tabCont .downLink a {
+  display:inline-block;
+  height:50px;
+  line-height:48px;
+  padding:0 25px 0 50px;
+  background-color:#f5732e;
+  font-size:18px;
+  color:#fff;
+  border-radius:25px;
+  margin-right:10px;
+  font-weight:bold;
+  border:1px solid #f5732e;
+  transition:all .3s;
+  -webkit-transition:all .3s;
+  -moz-transition:all .3s;
+  -o-transition:all .3s;
+  margin-bottom:15px;
+}
+#service .tabCont .downLink a.appstore {
+  background:#f5732e url('https://s3.ap-northeast-2.amazonaws.com/eosnova.io.resource/images/wzd-icon-appsotore.png') no-repeat left 18px center;
+  background-size:21px;
+}
+#service .tabCont .downLink a.googleplay {
+  background:#f5732e url('https://s3.ap-northeast-2.amazonaws.com/eosnova.io.resource/images/wzd-icon-playstore.png') no-repeat left 18px center;
+  background-size:20px;
+}
+#service .tabCont .downLink a.web {
+  background:#f5732e url('https://s3.ap-northeast-2.amazonaws.com/eosnova.io.resource/images/wzd-icon-web.png') no-repeat left 18px center;
+  background-size:20px;
+}
+#service .tabCont .img {
+  text-align:right;
+}
+#service .tabCont .img p {
+  display:inline-block;
+}
+
+#serviceCont li .txt h4,
+#serviceCont li .txt p,
+#serviceCont li .txt div,
+#serviceCont li .img p {
+  transition:all 1s;
+  -webkit-transition:all 1s;
+  -moz-transition:all 1s;
+  -o-transition:all 1s;
+}
+#serviceCont li .txt h4 {
+  opacity:0;
+  transform:translateX(-150px);
+}
+#serviceCont li .txt p {
+  opacity:0;
+  transform:translateX(-150px);
+}
+#serviceCont li .txt div {
+  opacity:0;
+  transform:translateX(-150px);
+}
+#serviceCont li.on .txt h4,
+#serviceCont li.on .txt p,
+#serviceCont li.on .txt div {
+  animation:slideIn .7s both;
+}
+#serviceCont li.off .txt h4,
+#serviceCont li.off .txt p,
+#serviceCont li.off .txt div{
+  opacity:1;
+  animation:leftOut .3s both;
+  transform:translateY(0);
+}
+#serviceCont li .img p {
+  opacity:0;
+  transform:translateX(150px);
+}
+#serviceCont li.on .img p {
+  animation:slideIn .7s both;
+}
+#serviceCont li.off .img p {
+  animation:rightOut .7s both;
+}
+
+@keyframes slideIn{
+  100% {
+    opacity:1;
+    transform:translateX(0);
+  }
+}
+@-webkit-keyframes slideIn{
+  100% {
+    opacity:1;
+    transform:translateX(0);
+  }
+}
+@-moz-keyframes slideIn {
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes leftOut{
+  100% {
+    opacity:0;
+    transform:translateX(-150px);
+  }
+}
+@-webkit-keyframes leftOut{
+  100% {
+    opacity:0;
+    transform:translateX(-150px);
+  }
+}
+@-moz-keyframes leftOut {
+  100% {
+    opacity: 0;
+    transform:translateX(-150px);
+  }
+}
+@keyframes rightOut{
+  100% {
+    opacity:0;
+    transform:translateX(150px);
+  }
+}
+@-webkit-keyframes rightOut{
+  100% {
+    opacity:0;
+    transform:translateX(150px);
+  }
+}
+@-moz-keyframes rightOut {
+  100% {
+    opacity:0;
+    transform:translateX(150px);
+  }
+}
+
+
+#about {
+  text-align:center;
+}
+#about .teamList {
+  padding:60px 0 0;
+}
+#about .teamList li {
+  margin:0 5px 40px;
+  width:155px;
+  display:inline-block;
+  vertical-align:top;
+}
+#about .teamList li .title {
+  font-size:17px !important;
+  font-weight:bold;
+  margin:20px 0 10px;
+  text-align:left;
+}
+#about .teamList li .work {
+  text-align:left;
+  height:50px;
+}
+#about .teamList li .work span {
+  display:block;
+  line-height:20px;
+}
+.teamList li:nth-child(-n+6) .title span {
+  padding-left:65px;
+}
+.teamList li:nth-child(7) .title span,
+.teamList li:nth-child(8) .title span,
+.teamList li:nth-child(9) .title span {
+  padding-left:40px;
+}
+.teamList li:nth-child(10) .title span {
+  padding-left:57px;
+}
+.teamList li:nth-child(11) .title span {
+  padding-left:47px;
+}
+.teamList li:nth-child(12) .title span {
+  padding-left:50px;
+}
+.teamList li:nth-child(1) .work .w1,
+.teamList li:nth-child(2) .work .w1 {
+  padding-left:72px;
+}
+.teamList li:nth-child(3) .work .w1 { padding-left:70px; }
+.teamList li:nth-child(4) .work .w1 { padding-left:63px; }
+.teamList li:nth-child(5) .work .w1 { padding-left:70px; }
+.teamList li:nth-child(6) .work .w1 { padding-left:64px; }
+.teamList li:nth-child(7) .work .w1,
+.teamList li:nth-child(8) .work .w1,
+.teamList li:nth-child(9) .work .w1 {
+  padding-left:38px;
+}
+.teamList li:nth-child(10) .work .w1 { padding-left:56px; }
+.teamList li:nth-child(11) .work .w1 { padding-left:49px; }
+.teamList li:nth-child(12) .work .w1 { padding-left:40px; }
+
+
+.teamList li:nth-child(3) .work .w2 { padding-left:52px; }
+.teamList li:nth-child(4) .work .w2 { padding-left:65px; }
+.teamList li:nth-child(5) .work .w2 { padding-left:57px; }
+.teamList li:nth-child(6) .work .w2 { padding-left:58px; }
+.teamList li:nth-child(7) .work .w2,
+.teamList li:nth-child(8) .work .w2,
+.teamList li:nth-child(9) .work .w2 { padding-left:24px; }
+.teamList li:nth-child(10) .work .w2 { padding-left:35px; }
+.teamList li:nth-child(11) .work .w2 { padding-left:38px; }
+.teamList li:nth-child(12) .work .w2 { padding-left:55px; }
+
+
+
+.teamList li:nth-child(1) .title.en span { padding-left:43px; }
+.teamList li:nth-child(2) .title.en span { padding-left:48px; }
+.teamList li:nth-child(3) .title.en span { padding-left:46px; }
+.teamList li:nth-child(4) .title.en span { padding-left:20px; }
+.teamList li:nth-child(5) .title.en span { padding-left:50px; }
+.teamList li:nth-child(6) .title.en span { padding-left:50px; }
+.teamList li:nth-child(7) .title.en span { padding-left:12px; }
+.teamList li:nth-child(8) .title.en span { padding-left:15px; }
+.teamList li:nth-child(9) .title.en span { padding-left:30px; }
+.teamList li:nth-child(10) .title.en span { padding-left:35px; }
+.teamList li:nth-child(11) .title.en span { padding-left:27px; }
+.teamList li:nth-child(12) .title.en span { padding-left:7px; }
+
+
+#about .history {
+  margin-top:60px;
+  padding:70px 60px 20px 90px;
+  background-color:#fff;
+  border-radius:16px;
+  overflow:hidden;
+}
+#about .history li {
+  position:relative;
+  width:25%;
+  float:left;
+  box-sizing:border-box;
+  margin-bottom:50px;
+  padding-left:20px;
+  text-align:left;
+  font-size:16px;
+  line-height:normal;
+}
+#about .history li:before {
+  content:'';
+  display:block;
+  width:6px;
+  height:100%;
+  background-color:#f97530;
+  border-radius:3px;
+  position:absolute;
+  top:0;
+  left:0;
+}
+#about .history h4 {
+  font-size:30px;
+  margin-bottom:10px;
+}
+.careerBox {
+  margin-top:80px;
+}
+.careerBox .cell {
+  width:50%;
+  box-sizing:border-box;
+  vertical-align:top;
+}
+.careerBox .benefit {
+  padding-right:25px;
+}
+.careerBox .benefit ul {
+  border-top:1px solid #d2d2d2;
+  border-bottom:1px solid #d2d2d2;
+  padding-top:40px;
+}
+.careerBox .benefit li {
+  position:relative;
+  padding-left:150px;
+  min-height:70px;
+}
+.careerBox .benefit h4 {
+  position:absolute;
+  top:-2px;
+  left:0;
+  font-size:20px;
+  font-weight:bold;
+}
+.careerBox .benefit h4 span {
+  color:#fff;
+  display:inline-block;
+  width:32px;
+  height:32px;
+  border-radius:100%;
+  font-size:16px;
+  line-height:33px;
+  background-color:#f97530;
+  text-align:center;
+  margin-right:10px;
+}
+.careerBox .benefit .txt {
+  word-break:keep-all;
+}
+.careerBox .benefit p {
+  word-break:keep-all;
+}
+.careerBox .recruit {
+  padding-left:25px;
+}
+.careerBox .recruit li {
+  position:relative;
+  background-color:#f6f6f6;
+  border-radius:16px;
+  margin-bottom:22px;
+  height:188px;
+}
+.careerBox .recruit li:before {
+  content:'';
+  display:block;
+  width:90px;
+  height:90px;
+  position:absolute;
+  top:50%;
+  margin-top:-45px;
+  left:45px;
+}
+.careerBox .recruit li:nth-child(1):before {
+  background:url('https://s3.ap-northeast-2.amazonaws.com/eosnova.io.resource/images/wzd-recruit-01.png') no-repeat center / contain;
+}
+.careerBox .recruit li:nth-child(2):before {
+  background:url('https://s3.ap-northeast-2.amazonaws.com/eosnova.io.resource/images/wzd-recruit-02.png') no-repeat center / contain;
+  background-size:90px 90px;
+}
+.careerBox .recruit li:nth-child(3):before {
+  background:url('https://s3.ap-northeast-2.amazonaws.com/eosnova.io.resource/images/wzd-recruit-03.png') no-repeat center / contain;
+}
+.careerBox .recruit li a {
+  padding:0 20px 0 180px;
+}
+.careerBox .recruit li .cell {
+  vertical-align:middle;
+}
+.careerBox .recruit .point {
+  color:#f97530;
+  font-weight:bold;
+}
+.careerBox .recruit h4 {
+  font-size:30px;
+  line-height:normal;
+}
+.careerBox .recruit h4 img {
+  margin-left:5px;
+}
+.careerBox .recruit .position {
+  font-size:16px;
+  margin-top:5px;
+}
+
+#contact {
+  height:auto;
+  padding:0;
+  background-color:#f6f6f6;
+}
+#contact .cell {
+  width:50%;
+}
+#contact .address {
+  padding:100px 0;
+  text-align:center;
+}
+#contact .address .point {
+  color:#f97530;
+  font-size:20px;
+  font-weight:bold;
+}
+#contact .info {
+  margin-top:40px;
+  word-break:keep-all;
+}
+#contact h4 {
+  margin-bottom:5px;
+}
+#map {
+  background-color:#ccc;
+  height:100%;
+}
+
+
+
